@@ -19,28 +19,3 @@
 .tab-content {
   margin-top: 40px;
 }
-/* footer */
-.footer .container {
-  background: rgba(0, 0, 0, 0.4);
-}
-.footer-wrapper {
-  border-top: 1px solid #d8d8d8;
-  padding: 32px 0;
-}
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-mail-newsletter {
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.copyright {
-}
-.social-network-list {
-}
