@@ -3,17 +3,6 @@
   flex-direction: column;
   min-height: 100vh;
 }
-/* header */
-.header {
-  padding-top: 66px;
-}
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.header .container {
-  background: rgba(0, 0, 0, 0.2);
-}
 
 /* account-main */
 .account-main {
@@ -25,10 +14,10 @@
   background: rgba(236, 62, 62, 0.3);
 }
 .tab-list {
-  padding-top: 64px;
+  margin-top: 64px;
 }
 .tab-content {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 /* footer */
 .footer .container {
