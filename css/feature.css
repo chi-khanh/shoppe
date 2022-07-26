@@ -1,10 +1,11 @@
-.page-wrapper {
+/* account-main */
+.account-main {
+  flex: 1;
+  padding: 96px 0;
 }
-
-.header {
-}
-
-.account-main,
-.landing-main,
-.shop-main {
+@media screen and (max-width: 768px) {
+  .account-main {
+    flex: 1;
+    padding: 40px 0;
+  }
 }

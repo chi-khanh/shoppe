@@ -18,6 +18,8 @@
 body {
   margin: 0;
   font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 24px;
 }
 
 img {
@@ -32,4 +34,8 @@ h5,
 p {
   margin: 0;
   text-align: left;
+}
+
+iframe {
+  border: 0;
 }

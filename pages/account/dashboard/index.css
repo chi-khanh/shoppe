@@ -4,12 +4,6 @@
   min-height: 100vh;
 }
 
-/* account-main */
-.account-main {
-  flex: 1;
-  padding: 96px 0;
-}
-
 .account-main .container {
   background: rgba(236, 62, 62, 0.3);
 }
