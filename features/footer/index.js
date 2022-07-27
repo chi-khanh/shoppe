@@ -8,3 +8,8 @@ const onFooterLoad = () => {
     postToParent({ footer: { style: { height: document.body.scrollHeight } } })
   );
 };
+
+const onClickSubmitMail = () => {
+  const input = document.querySelector(".footer-mail-newsletter-input");
+  alert(input.value);
+};

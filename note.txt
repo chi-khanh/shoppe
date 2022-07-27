@@ -1,2 +1,1 @@
-Design
-- landing-page: https://www.figma.com/file/WIQ5rSPpbEhy9bM7TconNr/Shoppe-(Community)?node-id=0%3A1
+Design- landing-page: https://www.figma.com/file/WIQ5rSPpbEhy9bM7TconNr/Shoppe-(Community)?node-id=0%3A1

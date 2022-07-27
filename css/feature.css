@@ -3,6 +3,7 @@
   flex: 1;
   padding: 96px 0;
 }
+
 @media screen and (max-width: 768px) {
   .account-main {
     flex: 1;

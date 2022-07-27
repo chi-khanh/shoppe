@@ -3,13 +3,58 @@
   flex-direction: column;
   min-height: 100vh;
 }
+.account-main .page-label h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+@media screen and (max-width: 768px) {
+  .account-main .page-label h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+/* tab-list-wrapper */
+@media screen and (max-width: 768px) {
+  .tab-list-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-.account-main .container {
-  background: rgba(236, 62, 62, 0.3);
+/* tab-list-arrow-left,.tab-list-arrow-right */
+.tab-list-arrow-left,
+.tab-list-arrow-right {
+  display: none;
 }
-.tab-list {
-  margin-top: 64px;
+.tab-list-arrow-left button:hover {
+  cursor: auto;
 }
+
+.tab-list-arrow-left button:disabled path {
+  fill: var(--light-light-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .tab-list-arrow-left,
+  .tab-list-arrow-right {
+    display: inline-block;
+  }
+  .tab-list-arrow-right button {
+    padding-left: 8px;
+  }
+  .tab-list-arrow-left button {
+    padding-right: 8px;
+  }
+  button.arrow-button {
+    background: var(--light-white);
+    border: none;
+    cursor: pointer;
+  }
+}
+
 .tab-content {
-  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
 }
