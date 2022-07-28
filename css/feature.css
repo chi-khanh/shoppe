@@ -1,7 +1,18 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* account-main */
-.account-main {
+.account-main,
+.home-main {
   flex: 1;
   padding: 96px 0;
+}
+
+.home-main {
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -11,13 +11,12 @@
 
     <script src="./index.js"></script>
   </head>
-
   <body onLoad="onHeaderLoad()">
     <div class="header">
       <div class="container">
         <div class="header-wrapper">
           <!-- header logo -->
-          <div class="header-logo">
+          <a class="header-logo" onclick="onNavigateToParent(event)" href="pages/home/index.html">
             <svg
               width="129"
               height="27"
@@ -34,7 +33,7 @@
                 fill="black"
               />
             </svg>
-          </div>
+          </a>
           <!-- header list -->
           <div class="header-nav-list">
             <div class="nav-item">
@@ -94,7 +93,11 @@
             </div>
 
             <div class="nav-item nav-item-icon icon-account">
-              <a href="#" data-nav-id="6">
+              <a
+                onclick="onNavigateToParent(event)"
+                href="pages/account/dashboard/index.html"
+                data-nav-id="6"
+              >
                 <svg
                   width="22"
                   height="24"
