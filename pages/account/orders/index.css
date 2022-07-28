@@ -1,0 +1,25 @@
+.tab-content .browse-product {
+  display: flex;
+  justify-content: space-between;
+  background: #efefef;
+  border-top: 2px solid var(--light-accent);
+  padding: 25px 40px;
+  white-space: nowrap;
+}
+.browse-product button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--light-accent);
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .tab-content .browse-product {
+    display: block;
+    padding: 10px 16px;
+  }
+
+  .browse-product button {
+    margin-top: 8px;
+  }
+}
