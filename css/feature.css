@@ -1,3 +1,32 @@
+/* header */
+#iframe-header {
+  height: 122px;
+}
+@media screen and (max-width: 768px) {
+  #iframe-header {
+    height: 89px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #iframe-header {
+    height: 85px;
+  }
+}
+/* footer */
+#iframe-footer {
+  height: 177px;
+}
+@media screen and (max-width: 1200px) {
+  #iframe-footer {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #iframe-footer {
+    height: 308px;
+  }
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -19,5 +48,19 @@
   .account-main {
     flex: 1;
     padding: 40px 0;
+  }
+}
+
+/* page label */
+.page-label h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+@media screen and (max-width: 768px) {
+  .page-label h3 {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
