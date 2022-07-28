@@ -1,3 +1,24 @@
+// variables
+const BASE_URL = "/Volumes/ChiKhanh/work/shoppe";
+const account = {
+  dashboard: `/${BASE_URL}/pages/account/dashboard/index.html`,
+};
+
+// compute href for tab-list
+const mapLinkHref = () => {
+  const links = document.querySelectorAll('[rule="link"]');
+
+  for (const link of links) {
+    const href = link.getAttribute("href");
+    console.log(link, href);
+    link.setAttribute("href", `${BASE_URL}/${href}`);
+  }
+};
+
+const onLoad = () => {
+  mapLinkHref();
+};
+
 window.addEventListener(
   "message",
   (e) => {
@@ -18,10 +39,12 @@ window.addEventListener(
   false
 );
 
-const BASE_URL = "/Users/hophong/Desktop/khanh/shoppe";
-
 const onNavigate = (event) => {
   postToParent({
-    header: { navigate: { url: `${BASE_URL}/${event?.currentTarget?.getAttribute("href")}` } },
+    header: {
+      navigate: {
+        url: `${BASE_URL}/${event?.currentTarget?.getAttribute("href")}`,
+      },
+    },
   });
 };

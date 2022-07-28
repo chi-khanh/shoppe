@@ -16,24 +16,23 @@ const setActiveNav = () => {
   }
 };
 
-const postToParent = (params) => parent.postMessage(JSON.stringify(params), "*");
+const postToParent = (params) =>
+  parent.postMessage(JSON.stringify(params), "*");
 
 const onHeaderLoad = () => {
   setActiveNav();
-
-  postToParent({ header: { style: { height: document.body.scrollHeight } } });
-
-  window.addEventListener("resize", () =>
-    postToParent({ header: { style: { height: document.body.scrollHeight } } })
-  );
 };
 
-const BASE_URL = "/Users/hophong/Desktop/khanh/shoppe";
+const BASE_URL = "/Volumes/ChiKhanh/work/shoppe";
 
 const onNavigateToParent = (event) => {
   event.preventDefault();
 
   postToParent({
-    header: { navigate: { url: `${BASE_URL}/${event?.currentTarget?.getAttribute("href")}` } },
+    header: {
+      navigate: {
+        url: `${BASE_URL}/${event?.currentTarget?.getAttribute("href")}`,
+      },
+    },
   });
 };
