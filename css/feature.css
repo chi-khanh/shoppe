@@ -160,3 +160,86 @@
 .order-card-item .card-value a {
   color: var(--light-accent);
 }
+
+/* content-address*/
+.content-address {
+  display: flex;
+}
+
+.content-address h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.content-address a {
+  display: block;
+  color: var(--light-accent);
+  font-weight: 700;
+}
+.billing-address p,
+.shipping-address p {
+  color: var(--light-dark-gray);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 992px) {
+  .content-label p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .content-address {
+    display: block;
+    margin-top: 24px;
+  }
+  .shipping-address {
+    margin-top: 48px;
+  }
+  .content-address h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content-address a {
+    margin-top: 18px;
+  }
+
+  .content-address p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/* account-address */
+
+.address-save-button {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.address-save-button a {
+  color: var(--light-errors);
+}
+.address-save-button button {
+  background: var(--light-black);
+  padding: 16px 64px;
+  border: none;
+  border-radius: 4px;
+  color: var(--light-white);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 992px) {
+  .address-save-button {
+    margin-top: 40px;
+  }
+  .address-save-button a {
+    margin: 0;
+  }
+  .address-save-button button {
+    padding: 6px 64px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

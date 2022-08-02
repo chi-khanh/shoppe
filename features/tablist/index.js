@@ -1,14 +1,14 @@
-const setActiveNav = () => {
-  // get activeNav from url
+const setActiveTab = () => {
+  // get activeTab from url
   const urlParams = new URLSearchParams(window.location.search);
-  const activeNav = urlParams.get("activeNav");
+  const activeTab = urlParams.get("activeTab");
 
   // Loop all nodes
   const allNode = document.getElementsByTagName("*");
   for (const curNode of allNode) {
     const tabId = curNode.dataset.tabId;
-    // compare [data-tab-id] with [activeNav]
-    if (tabId === activeNav) {
+    // compare [data-tab-id] with [activeTab]
+    if (tabId === activeTab) {
       // Add "active" class to display
       curNode.classList.add("active");
       break;
@@ -20,7 +20,7 @@ const postToParent = (params) =>
   parent.postMessage(JSON.stringify(params), "*");
 
 const onTabListLoad = () => {
-  setActiveNav();
+  setActiveTab();
 };
 
 const BASE_URL = "/Volumes/ChiKhanh/work/shoppe";

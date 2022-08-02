@@ -1,3 +1,6 @@
+@import "./common/index.css";
+@import "./feature.css";
+
 @font-face {
   font-family: "DM Sans";
   font-weight: 400;
