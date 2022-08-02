@@ -10,7 +10,6 @@ const mapLinkHref = () => {
 
   for (const link of links) {
     const href = link.getAttribute("href");
-    console.log(link, href);
     link.setAttribute("href", `${BASE_URL}/${href}`);
   }
 };
@@ -24,17 +23,15 @@ window.addEventListener(
   (e) => {
     const { header, footer } = JSON.parse(e.data) || {};
 
-    // set iframe header's height
-    const iframeHeader = document.getElementById("iframe-header");
-    iframeHeader.style.height = `${header?.style?.height}px`;
-
+    // nagigate by header
     if (header?.navigate) {
       window.location.href = header.navigate.url;
     }
 
-    // set iframe footer's height
-    const iframeFooter = document.getElementById("iframe-footer");
-    iframeFooter.style.height = `${footer?.style?.height}px`;
+    // nagigate by tablist
+    if (tablist?.navigate) {
+      window.location.href = tablist.navigate.url;
+    }
   },
   false
 );

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account | Dashboard</title>
+    <title>Account | Addresses</title>
   </head>
 
   <body onload="onLoad()">
@@ -29,28 +29,30 @@
           <!-- tab-list-wrapper -->
           <iframe
             id="iframe-tablist"
-            src="../../../features/tablist/index.html?activeNav=1"
+            src="../../../features/tablist/index.html?activeNav=4"
           ></iframe>
 
           <!-- tab-content -->
           <div class="tab-content">
-            <p>
-              Hello Vitatheme (not Vitatheme?
-              <a
-                class="tab-content-log-out text-accent"
-                onclick="logout()"
-                href="#"
-                >Log out</a
-              >)
-            </p>
+            <div class="content-label">
+              <p>
+                The following addresses will be used on the checkout page by
+                default.
+              </p>
+            </div>
+            <div class="content-addresses">
+              <div class="billing-addresses flex-1">
+                <h5>Billing address</h5>
+                <a href="#">ADD</a>
+                <p>You have not set up this type of address yet.</p>
+              </div>
 
-            <p>
-              From your account dashboard you can view your
-              <a class="text-accent" href="">recent orders</a> , manage your
-              <a class="text-accent" href="#">shipping and billing addresses</a
-              >, and edit your
-              <a class="text-accent" href="#">password and account details</a> .
-            </p>
+              <div class="shipping-addresses flex-1">
+                <h5>Shipping address</h5>
+                <a href="#">ADD</a>
+                <p>You have not set up this type of address yet.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -63,6 +65,5 @@
     </div>
 
     <script src="../../../features/script.js"></script>
-    <script src="./index.js"></script>
   </body>
 </html>
