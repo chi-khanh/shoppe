@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ */
+/* text colors */
+.text-accent {
+  color: var(--light-accent);
+}
+
+.text-white {
+  color: var(--light-white);
+}
+
+.text-black {
+  color: var(--light-black);
+}
+
+.text-dark-gray {
+  color: var(--light-dark-gray);
+}
+
+.text-gray {
+  color: var(--light-gray);
+}
+
+.text-light-gray {
+  color: var(--light-light-gray);
+}
+
+.text-errors {
+  color: var(--light-errors);
+}
+
+/* ------------------------------------------------------------ */
+/* text align */
+.text-right {
+  text-align: right;
+}

@@ -1,0 +1,39 @@
+@import "./components/index.css";
+@import "./styles/index.css";
+
+/* 
+  xs: <= 375px
+  sm: <= 576px
+  md <= 768px
+  lg <= 992px
+  xl <= 1200px
+*/
+
+/* variable */
+/* :root {
+  --xs: 375px;
+} */
+
+/* ------------------------------------------------------------ */
+/* container */
+.container {
+  padding: 0 96px;
+}
+@media screen and (max-width: 676px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* .tab-content */
+.tab-content {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+}

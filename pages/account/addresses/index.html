@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../../css/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account | Addresses</title>
+  </head>
+
+  <body onload="onLoad()">
+    <div class="page-wrapper">
+      <!-- header -->
+      <iframe
+        id="iframe-header"
+        src="../../../features/header/index.html?activeNav=6"
+      ></iframe>
+
+      <!-- account main -->
+      <div class="account-main">
+        <div class="container">
+          <div class="page-label">
+            <h3>My Account</h3>
+          </div>
+
+          <!-- tab-list-wrapper -->
+          <iframe
+            id="iframe-tablist"
+            src="../../../features/tablist/index.html?activeTab=4"
+          ></iframe>
+
+          <!-- tab-content -->
+          <div class="tab-content">
+            <div class="content-label">
+              <p>
+                The following addresses will be used on the checkout page by
+                default.
+              </p>
+            </div>
+            <div class="content-address mt-45">
+              <div class="billing-address flex-1">
+                <h5>Billing address</h5>
+                <a
+                  class="mt-24"
+                  href="/Volumes/ChiKhanh/work/shoppe/pages/account/addresses/billing-addresses/index.html"
+                  >ADD</a
+                >
+                <p class="mt-14">
+                  You have not set up this type of address yet.
+                </p>
+              </div>
+
+              <div class="shipping-address flex-1">
+                <h5>Shipping address</h5>
+                <a
+                  class="mt-24"
+                  href="/Volumes/ChiKhanh/work/shoppe/pages/account/addresses/shipping-addresses/index.html"
+                  >ADD</a
+                >
+                <p class="mt-14">
+                  You have not set up this type of address yet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <iframe
+        id="iframe-footer"
+        src="../../../features/footer/index.html"
+      ></iframe>
+    </div>
+
+    <script src="../../../features/script.js"></script>
+  </body>
+</html>

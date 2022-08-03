@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ */
+/* flex */
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .d-none {
+    display: block;
+  }
+}
+.flex-1 {
+  flex: 1;
+}
+
+/* ------------------------------------------------------------ */
+/* dislay-none */
+.d-xs-none {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .d-xs-none {
+    display: block;
+  }
+  .d-md-none {
+    display: none;
+  }
+}
