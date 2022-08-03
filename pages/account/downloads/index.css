@@ -1,13 +1,3 @@
-/* responsive account| downloads */
-@media screen and (max-width: 850px) {
-  .d-xs-none {
-    display: block;
-  }
-  .d-md-none {
-    display: none;
-  }
-}
-
 /* table-cell-download */
 .table-cell-download {
   display: flex;
