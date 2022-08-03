@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../../css/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account | Account details</title>
+  </head>
+
+  <body onload="onLoad()">
+    <div class="page-wrapper">
+      <!-- header -->
+      <iframe
+        id="iframe-header"
+        src="../../../features/header/index.html?activeNav=6"
+      ></iframe>
+
+      <!-- account main -->
+      <div class="account-main">
+        <div class="container">
+          <div class="page-label">
+            <h3>My Account</h3>
+          </div>
+
+          <!-- tab-list-wrapper -->
+          <iframe
+            id="iframe-tablist"
+            src="../../../features/tablist/index.html?activeTab=5"
+          ></iframe>
+
+          <!-- tab-content -->
+          <div class="tab-content">
+            <div class="acccount-detail-wrapper">
+              <form>
+                <h3>Account details</h3>
+                <div class="input-outlined-wrapper">
+                  <input
+                    required
+                    class="input-outlined"
+                    type="text"
+                    placeholder="First name*"
+                  />
+                  <input
+                    required
+                    class="input-outlined"
+                    type="text"
+                    placeholder="Last name*"
+                  />
+                  <input
+                    required
+                    class="input-outlined"
+                    type="text"
+                    placeholder="Display name*"
+                  />
+                </div>
+                <p>
+                  This will be how your name will be displayed in the account
+                  section and in reviews.
+                </p>
+                <input
+                  required
+                  class="input-outlined"
+                  type="text"
+                  placeholder="Email address*"
+                />
+                <h5>Password change</h5>
+                <input
+                  class="input-outlined"
+                  type="password"
+                  placeholder="Current password (leave blank to leave unchanged)"
+                />
+                <input
+                  class="input-outlined"
+                  type="password"
+                  placeholder="New password (leave blank to leave unchanged)"
+                />
+                <input
+                  class="input-outlined"
+                  type="password"
+                  placeholder="Confirm new password"
+                />
+                <button class="form-button">SAVE CHANGES</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <iframe
+        id="iframe-footer"
+        src="../../../features/footer/index.html"
+      ></iframe>
+    </div>
+
+    <script src="../../../features/script.js"></script>
+  </body>
+</html>
