@@ -13,7 +13,17 @@
   src: url(../fonts/DM_Sans/DMSans-Medium.ttf);
 }
 
-:root {
+body {
+  --light-accent: #a18a68;
+  --light-white: #ffffff;
+  --light-black: #000000;
+  --light-dark-gray: #707070;
+  --light-gray: #d8d8d8;
+  --light-light-gray: #efefef;
+  --light-errors: #d82700;
+}
+
+body.dark-mode {
   --light-accent: #a18a68;
   --light-white: #ffffff;
   --light-black: #000000;
