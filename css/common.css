@@ -179,7 +179,9 @@
 .pr-0 {
   padding-right: 0;
 }
-
+.pr-4 {
+  padding-right: 4px;
+}
 /* text colors */
 .text-accent {
   color: var(--light-accent);

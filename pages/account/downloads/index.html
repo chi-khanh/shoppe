@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account | Orders</title>
+    <title>Account | Downloads</title>
   </head>
 
   <body onload="onLoad()">
@@ -56,25 +56,28 @@
                   >Dashboard</a
                 >
               </div>
+
+              <div class="tab-item">
+                <a rule="link" href="pages/account/orders/index.html">Orders</a>
+              </div>
+
               <div class="tab-item">
                 <a
                   rule="link"
                   class="active"
-                  href="pages/account/orders/index.html"
-                  >Orders</a
-                >
-              </div>
-              <div class="tab-item">
-                <a rule="link" href="pages/account/downloads/index.html"
+                  href="pages/account/downloads/index.html"
                   >Downloads</a
                 >
               </div>
+
               <div class="tab-item">
                 <a rule="link" href="#">Addresses</a>
               </div>
+
               <div class="tab-item">
                 <a rule="link" href="#">Account details</a>
               </div>
+
               <div class="tab-item">
                 <a rule="link" href="#">Logout</a>
               </div>
@@ -116,7 +119,7 @@
                     </th>
                     <th
                       class="table-cell table-head-cell text-right"
-                      width="150px"
+                      width="200px"
                     >
                       ACTIONS
                     </th>
@@ -130,7 +133,11 @@
                     <td class="table-cell table-body-cell">Processing</td>
                     <td class="table-cell table-body-cell">$ 100</td>
                     <td class="table-cell table-body-cell text-right">
-                      <a href="#">View Order</a>
+                      <div class="table-cell-download">
+                        <a href="#">View Order</a>
+                        <div class="vertical"></div>
+                        <a href="#">Download</a>
+                      </div>
                     </td>
                   </tr>
 
@@ -140,7 +147,11 @@
                     <td class="table-cell table-body-cell">Delivered</td>
                     <td class="table-cell table-body-cell">$ 105</td>
                     <td class="table-cell table-body-cell text-right">
-                      <a href="#">View Order</a>
+                      <div class="table-cell-download">
+                        <a href="#">View Order</a>
+                        <div class="vertical"></div>
+                        <a href="#">Download</a>
+                      </div>
                     </td>
                   </tr>
 
@@ -150,7 +161,11 @@
                     <td class="table-cell table-body-cell">Canceled</td>
                     <td class="table-cell table-body-cell">$ 65</td>
                     <td class="table-cell table-body-cell text-right">
-                      <a href="#">View Order</a>
+                      <div class="table-cell-download">
+                        <a href="#">View Order</a>
+                        <div class="vertical"></div>
+                        <a href="#">Download</a>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -181,7 +196,13 @@
               </div>
               <div class="order-card-item">
                 <p class="card-label">ACTIONS</p>
-                <div class="card-value"><a href="#">View Order</a></div>
+                <div class="card-value">
+                  <div class="table-cell-download">
+                    <a class="pr-4" href="#">View Order</a>
+                    <div class="vertical pr-4"></div>
+                    <a href="#">Download</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -205,7 +226,13 @@
               </div>
               <div class="order-card-item">
                 <p class="card-label">ACTIONS</p>
-                <div class="card-value"><a href="#">View Order</a></div>
+                <div class="card-value">
+                  <div class="table-cell-download">
+                    <a class="pr-4" href="#">View Order</a>
+                    <div class="vertical pr-4"></div>
+                    <a href="#">Download</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -229,7 +256,13 @@
               </div>
               <div class="order-card-item">
                 <p class="card-label">ACTIONS</p>
-                <div class="card-value"><a href="#">View Order</a></div>
+                <div class="card-value">
+                  <div class="table-cell-download">
+                    <a class="pr-4" href="#">View Order</a>
+                    <div class="vertical pr-4"></div>
+                    <a href="#">Download</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

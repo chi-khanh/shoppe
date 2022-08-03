@@ -1,0 +1,27 @@
+/* responsive account| downloads */
+@media screen and (max-width: 850px) {
+  .d-xs-none {
+    display: block;
+  }
+  .d-md-none {
+    display: none;
+  }
+}
+
+/* table-cell-download */
+.table-cell-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* vertical */
+.table-cell-download .vertical {
+  border-left: 1px solid var(--light-accent);
+  height: 12px;
+}
+@media screen and (max-width: 850px) {
+  .table-cell-download .vertical {
+    height: 8px;
+  }
+}
