@@ -39,6 +39,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--light-dark-gray);
@@ -54,5 +58,6 @@ p {
 }
 
 iframe {
+  display: block;
   border: 0;
 }

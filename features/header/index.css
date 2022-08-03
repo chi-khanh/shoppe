@@ -99,7 +99,7 @@
 }
 
 /* header-nav-list .nav-item a */
-.header-nav-list .nav-item a {
+.header-nav-list .nav-item a, .header-nav-list .nav-item button {
   display: block;
   color: var(--light-black);
   margin-bottom: -1px;
