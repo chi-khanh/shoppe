@@ -1,0 +1,55 @@
+.acccount-detail-wrapper {
+  padding: 0 400px;
+}
+.acccount-detail-wrapper h3 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+}
+.acccount-detail-wrapper h5 {
+  margin-top: 48px;
+  font-weight: 700;
+}
+.acccount-detail-wrapper p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--light-dark-gray);
+}
+.acccount-detail-wrapper input {
+  margin-top: 36px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.acccount-detail-wrapper button {
+  width: 100%;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1200px) {
+  .acccount-detail-wrapper {
+    padding: 0;
+  }
+  .acccount-detail-wrapper h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .acccount-detail-wrapper h5 {
+    font-weight: 400;
+  }
+  .acccount-detail-wrapper input {
+    margin-top: 48px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .input-outlined-wrapper input:first-child {
+    margin-top: 20px;
+  }
+  .acccount-detail-wrapper button {
+    margin-top: 45px;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

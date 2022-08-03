@@ -220,15 +220,6 @@
 .address-save-button a {
   color: var(--light-errors);
 }
-.address-save-button button {
-  background: var(--light-black);
-  padding: 16px 64px;
-  border: none;
-  border-radius: 4px;
-  color: var(--light-white);
-  cursor: pointer;
-  white-space: nowrap;
-}
 
 @media screen and (max-width: 992px) {
   .address-save-button {
