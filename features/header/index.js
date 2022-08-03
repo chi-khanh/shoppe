@@ -20,6 +20,13 @@ const postToParent = (params) =>
   parent.postMessage(JSON.stringify(params), "*");
 
 const onHeaderLoad = () => {
+  // load mode from localStorage
+  const mode = localStorage.getItem("mode");
+  if (!mode) localStorage.setItem("mode", "light");
+
+  postToParent({ header: { mode } });
+  updateMode(mode);
+
   setActiveNav();
 };
 
@@ -36,3 +43,39 @@ const onNavigateToParent = (event) => {
     },
   });
 };
+
+const onChangeMode = () => {
+  const mode = localStorage.getItem("mode");
+
+  updateMode(mode === "light" ? "dark" : "light")
+};
+
+const updateMode = (mode) => {
+  const lightIcon = document.getElementById("light-icon");
+  const darkIcon = document.getElementById("dark-icon");
+
+  if (mode === "light") {
+    localStorage.setItem("mode", "light");
+
+    // update light-icon class
+    lightIcon.classList.remove("d-none");
+    lightIcon.classList.add("d-block");
+
+    // update dark-icon class
+    darkIcon.classList.remove("d-block");
+    darkIcon.classList.add("d-none");
+
+  } else {
+    localStorage.setItem("mode", "dark");
+
+    // update light-icon class
+    lightIcon.classList.remove("d-block");
+    lightIcon.classList.add("d-none");
+
+    // update dark-icon class
+    darkIcon.classList.remove("d-none");
+    darkIcon.classList.add("d-block");
+  }
+
+  postToParent({ header: { mode } });
+} 
