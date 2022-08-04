@@ -34,7 +34,9 @@
 .mt-64 {
   margin-top: 64px;
 }
-
+.mt-85 {
+  margin-top: 85px;
+}
 @media screen and (max-width: 1200px) {
   .mt-xl-24 {
     margin-top: 24px;
@@ -55,6 +57,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .mt-md-0 {
+    margin-top: 0;
+  }
   .mt-md-24 {
     margin-top: 24px;
   }
@@ -136,5 +141,10 @@
 @media screen and (max-width: 992px) {
   .pr-lg-0 {
     padding-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pr-md-16 {
+    padding-right: 16px;
   }
 }
