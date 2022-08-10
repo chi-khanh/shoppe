@@ -53,7 +53,7 @@
 
 /* account-main */
 .account-main,
-.home-main {
+.page-main {
   flex: 1;
   padding: 96px 0;
 }
@@ -66,6 +66,11 @@
   .account-main {
     flex: 1;
     padding: 40px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-main {
+    padding-top: 0;
   }
 }
 
@@ -230,6 +235,39 @@
   }
   .address-save-button button {
     padding: 6px 64px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+/* product-card */
+
+.product-image {
+  width: 100%;
+}
+
+.product-card h3 {
+  padding-top: 25px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--light-black);
+}
+@media screen and (max-width: 768px) {
+  .product-card h3 {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.product-card p {
+  padding-top: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--light-accent);
+}
+@media screen and (max-width: 768px) {
+  .product-card p {
+    padding-top: 4px;
     font-size: 12px;
     line-height: 18px;
   }
