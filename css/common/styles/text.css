@@ -33,3 +33,10 @@
 .text-right {
   text-align: right;
 }
+
+/* -------------------------------------------------- */
+/* font-size */
+.text-12 {
+  font-size: 12px;
+  line-height: 18px;
+}
