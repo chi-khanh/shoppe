@@ -1,0 +1,8 @@
+.review-detail {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 40px;
+}
+.check-box {
+  user-select: none;
+  align-items: center;
+}

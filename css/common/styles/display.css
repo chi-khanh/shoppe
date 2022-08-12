@@ -11,16 +11,33 @@
 .flex-1 {
   flex: 1;
 }
-
+/* ------------------------------------------------------------ */
+/* dislay-block */
+.d-block {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  .d-lg-block {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-md-block {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-sm-block {
+    display: block;
+  }
+}
 /* ------------------------------------------------------------ */
 /* dislay-none */
 
 .d-none {
   display: none;
 }
-.d-block {
-  display: block;
-}
+
 @media screen and (max-width: 992px) {
   .d-lg-none {
     display: none;
