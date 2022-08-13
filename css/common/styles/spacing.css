@@ -13,14 +13,14 @@
   margin-top: 14px;
 }
 
-.mt-20 {
-  margin-top: 20px;
-}
 .mt-15 {
   margin-top: 15px;
 }
 .mt-16 {
   margin-top: 16px;
+}
+.mt-20 {
+  margin-top: 20px;
 }
 .mt-24 {
   margin-top: 24px;
@@ -52,6 +52,9 @@
 }
 .mt-70 {
   margin-top: 70px;
+}
+.mt-75 {
+  margin-top: 75px;
 }
 .mt-80 {
   margin-top: 80px;
@@ -123,6 +126,9 @@
 .ml-40 {
   margin-left: 40px;
 }
+.ml-90 {
+  margin-left: 90px;
+}
 @media screen and (max-width: 1200px) {
   .ml-xl-40 {
     margin-left: 40px;
@@ -155,6 +161,9 @@
 /* margin-right */
 .mr-5 {
   margin-right: 5px;
+}
+.mr-8 {
+  margin-right: 8px;
 }
 .mr-95 {
   margin-right: 95px;
