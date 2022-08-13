@@ -44,7 +44,9 @@
 .mt-50 {
   margin-top: 50px;
 }
-
+.mt-60 {
+  margin-top: 60px;
+}
 .mt-64 {
   margin-top: 64px;
 }
@@ -130,6 +132,9 @@
   .ml-lg-40 {
     margin-left: 40px;
   }
+  .ml-lg-8 {
+    margin-left: 8px;
+  }
 }
 @media screen and (max-width: 768px) {
   .ml-md-40 {
@@ -154,6 +159,7 @@
 .mr-95 {
   margin-right: 95px;
 }
+
 /* ------------------------------------------------------------ */
 /* padding-left */
 .pl-0 {
