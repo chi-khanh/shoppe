@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../../css/index.css" />
     <link rel="stylesheet" href="./index.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
+    <title>Shop | Product</title>
 
-    <script src="../../features/script.js"></script>
+    <script src="../../../features/script.js"></script>
   </head>
 
   <body>
@@ -16,7 +16,7 @@
       <!-- header -->
       <iframe
         id="iframe-header"
-        src="../../features/header/index.html?activeNav=1"
+        src="../../../features/header/index.html?activeNav=1"
       ></iframe>
       <div class="page-main">
         <div class="container">
@@ -113,6 +113,11 @@
                       class="slider"
                       id="slider-max"
                     />
+                    <div class="thumb-line"></div>
+                    <div
+                      id="slider-line-range"
+                      class="thumb-line thumb-line-selected"
+                    ></div>
                   </div>
 
                   <!-- price-select -->
@@ -162,11 +167,13 @@
               <!-- shop-product -->
               <div class="shop-product d-flex">
                 <div class="product-card">
-                  <a href="">
+                  <a
+                    href="/Volumes/ChiKhanh/work/shoppe/pages/shop/product-description/index.html"
+                  >
                     <div class="product-sale-off">
                       <img
                         class="product-image"
-                        src="./images/product-1.png"
+                        src=".././images/product-1.png"
                         alt=""
                       />
                       <p class="product-value d-lg-none">- %21</p>
@@ -180,7 +187,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src="./images/product-2.png"
+                      src=".././images/product-2.png"
                       alt=""
                     />
                     <h3 class="product-name">Hal Earrings</h3>
@@ -192,7 +199,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src="./images/product-3.png"
+                      src=".././images/product-3.png"
                       alt=""
                     />
                     <h3 class="product-name">Kaede Hair Pin Set Of 3</h3>
@@ -204,7 +211,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src="./images/product-4.png"
+                      src=".././images/product-4.png"
                       alt=""
                     />
                     <h3 class="product-name">Hair Pin Set of 3</h3>
@@ -217,7 +224,7 @@
                     <div class="product-sold-out">
                       <img
                         class="product-image"
-                        src="./images/product-5.png"
+                        src=".././images/product-5.png"
                         alt=""
                       />
                       <p class="product-value d-lg-none">Sold out</p>
@@ -231,7 +238,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src="./images/product-6.png"
+                      src=".././images/product-6.png"
                       alt=""
                     />
                     <h3 class="product-name">Yuki Hair Pin Set of 3</h3>
@@ -246,16 +253,14 @@
       <!-- footer -->
       <iframe
         id="iframe-footer"
-        src="../../features/footer/index.html"
+        src="../../../features/footer/index.html"
       ></iframe>
     </div>
 
     <script>
       const sliderMin = document.getElementById("slider-min");
       const sliderMax = document.getElementById("slider-max");
-      const sliderThumbAppearance = document.getElementById(
-        "slider-thumb-appearance"
-      );
+      const sliderLineSelected = document.getElementById("slider-line-range");
 
       const updateThumbAppearance = () => {
         sliderThumbAppearance.style.width = `${
@@ -265,13 +270,15 @@
 
       sliderMin.oninput = (event) => {
         const minVal = Number(event.target.value);
-        sliderMax.min = minVal + 1;
-        sliderMax.style.width = `${100 - minVal - 1}%`;
+        sliderMax.min = minVal;
+        sliderMax.style.width = `${100 - minVal}%`;
+        sliderLineSelected.style.left = `${minVal}%`;
       };
       sliderMax.oninput = (event) => {
         const maxVal = Number(event.target.value);
-        sliderMin.max = maxVal - 1;
-        sliderMin.style.width = `${maxVal - 1}%`;
+        sliderMin.max = maxVal;
+        sliderMin.style.width = `${maxVal}%`;
+        sliderLineSelected.style.right = `${100 - maxVal}%`;
       };
     </script>
   </body>
