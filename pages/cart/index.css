@@ -1,0 +1,132 @@
+.page-main {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .page-main {
+    padding: 0;
+  }
+}
+/* shippping-cart */
+.shippping-cart {
+  position: fixed;
+  flex-direction: column;
+  background: var(--light-white);
+  min-height: 100vh;
+  border: 1px solid var(--light-gray);
+  border-width: 0 0 0 1px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .shippping-cart {
+    width: 100%;
+    border: none;
+  }
+}
+
+.cart-header {
+  padding: 72px 36px 0 36px;
+}
+@media screen and (max-width: 768px) {
+  .cart-header {
+    padding: 15px 16px 0 16px;
+  }
+}
+
+/* back-arrow */
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  cursor: pointer;
+}
+
+/* product-list */
+.product-list {
+  padding: 5px 36px 40px 36px;
+  border-bottom: 1px solid var(--light-gray);
+}
+@media screen and (max-width: 768px) {
+  .product-list {
+    padding: 5px 16px 40px 16px;
+  }
+}
+.product-list {
+  overflow-x: visible;
+  overflow-y: auto;
+}
+
+.product-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* Track */
+.product-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.product-list::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+.product-list::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/* product-item */
+.product-item {
+  padding: 12px 0;
+}
+
+.product-item p span {
+  cursor: pointer;
+}
+
+.product-list .product-item:first-child {
+  padding-top: 0;
+}
+
+.product-list .product-item:last-child {
+  padding-bottom: 0;
+}
+
+.product-item img {
+  width: 136px;
+  height: 136px;
+}
+.product-item svg {
+  cursor: pointer;
+}
+
+/* view-cart-button */
+.view-cart-button {
+  padding: 0 36px 30px 36px;
+}
+@media screen and (max-width: 768px) {
+  .view-cart-button {
+    padding: 0 16px 36px 16px;
+  }
+}
+
+.product-price-total {
+  justify-content: space-between;
+}
+
+.view-cart-button button {
+  background: var(--light-white);
+  width: 100%;
+  border: 1px solid var(--light-black);
+  border-radius: 4px;
+  padding: 16px 0;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .view-cart-button button {
+    padding: 8px 0;
+    font-weight: 400;
+  }
+}

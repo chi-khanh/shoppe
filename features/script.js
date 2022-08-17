@@ -1,5 +1,5 @@
 // variables
-const BASE_URL = "/Users/hophong/Desktop/khanh/shoppe";
+const BASE_URL = "/Volumes/ChiKhanh/work/shoppe";
 const account = {
   dashboard: `/${BASE_URL}/pages/account/dashboard/index.html`,
 };

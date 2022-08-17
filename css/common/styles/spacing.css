@@ -65,6 +65,9 @@
 .mt-95 {
   margin-top: 95px;
 }
+.mt-100 {
+  margin-top: 100px;
+}
 @media screen and (max-width: 1200px) {
   .mt-xl-24 {
     margin-top: 24px;
@@ -114,9 +117,16 @@
     margin-top: 32px;
   }
 }
-
+/* ------------------------------------------------------------ */
+/* margin-bottom */
+.mb-5 {
+  margin-bottom: 5px;
+}
 /* ------------------------------------------------------------ */
 /* margin-left */
+.ml-8 {
+  margin-left: 8px;
+}
 .ml-16 {
   margin-left: 16px;
 }
@@ -176,6 +186,9 @@
 }
 .pl-16 {
   padding-left: 16px;
+}
+.pl-72 {
+  padding-left: 72px;
 }
 .pl-90 {
   padding-left: 90px;

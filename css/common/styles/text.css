@@ -33,6 +33,11 @@
 .text-right {
   text-align: right;
 }
+@media screen and (max-width: 768px) {
+  .text-md-center {
+    text-align: center;
+  }
+}
 
 /* -------------------------------------------------- */
 /* font-size */
@@ -47,4 +52,10 @@
 .text-20 {
   font-size: 20px;
   line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .text-md-12 {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
