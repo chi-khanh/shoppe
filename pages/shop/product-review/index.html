@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produc | Reviews</title>
-
-    <script src="../../../features/script.js"></script>
   </head>
 
-  <body>
+  <body onload="onLoad()">
     <div class="page-wrapper">
       <!-- header -->
       <iframe
@@ -27,13 +25,13 @@
               <!-- review-images -->
               <div class="review-image d-flex flex-1">
                 <div class="image-main">
-                  <img src=".././images/product-1.png" alt="" />
+                  <img src="../.././images/product-1.png" alt="" />
                 </div>
                 <div class="product-images d-flex mt-24">
-                  <img src=".././images/product-1.png" alt="" />
-                  <img src=".././images/product-1.png" alt="" />
-                  <img src=".././images/product-1.png" alt="" />
-                  <img src=".././images/product-1.png" alt="" />
+                  <img src="../.././images/product-1.png" alt="" />
+                  <img src="../.././images/product-1.png" alt="" />
+                  <img src="../.././images/product-1.png" alt="" />
+                  <img src="../.././images/product-1.png" alt="" />
                 </div>
               </div>
 
@@ -193,30 +191,34 @@
             </div>
 
             <!-- product-tab-list -->
-            <div class="product-tab-list d-flex">
-              <div class="tab-item mr-95">
-                <a
-                  href="/Volumes/ChiKhanh/work/shoppe/pages/shop/product-description/index.html"
-                >
-                  Description
-                </a>
-              </div>
-              <div class="tab-item mr-95">
-                <a
-                  href="/Volumes/ChiKhanh/work/shoppe/pages/shop/product-aditional-information/index.html"
-                >
-                  Aditional information</a
-                >
-              </div>
-              <div class="tab-item">
-                <a
-                  class="active"
-                  href="/Volumes/ChiKhanh/work/shoppe/pages/shop/product-review/index.html"
-                  >Reviews(0)</a
-                >
+            <div class="product-tab-list">
+              <div class="tab-list mt-100 d-flex">
+                <div class="tab-item">
+                  <a
+                    rule="link"
+                    href="pages/shop/product-description/index.html"
+                  >
+                    Description
+                  </a>
+                </div>
+                <div class="tab-item">
+                  <a
+                    rule="link"
+                    href="pages/shop/product-aditional-information/index.html"
+                  >
+                    Aditional information</a
+                  >
+                </div>
+                <div class="tab-item">
+                  <a
+                    rule="link"
+                    class="active"
+                    href="pages/shop/product-review/index.html"
+                    >Reviews(0)</a
+                  >
+                </div>
               </div>
             </div>
-
             <!-- review-content -->
             <div class="review-content mt-40 d-flex">
               <!-- review-customer -->
@@ -408,7 +410,6 @@
                 <form action="">
                   <input
                     class="input-outlined text-14 text-dark-gray mt-45"
-                    class="input-outlined text-14"
                     type="text"
                     placeholder="Your Review*"
                     required
@@ -529,7 +530,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src=".././images/product-4.png"
+                      src="../.././images/product-4.png"
                       alt=""
                     />
                     <h3 class="product-name">Hair Pin Set of 3</h3>
@@ -541,7 +542,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src=".././images/product-5.png"
+                      src="../.././images/product-5.png"
                       alt=""
                     />
                     <h3 class="product-name">Plaine Necklace</h3>
@@ -553,7 +554,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src=".././images/product-6.png"
+                      src="../.././images/product-6.png"
                       alt=""
                     />
                     <h3 class="product-name">Yuki Hair Pin Set of 3</h3>
@@ -568,7 +569,7 @@
           <div class="mobile-product d-none d-lg-block mt-10">
             <div class="product-detail">
               <div class="product-image">
-                <img src=".././images/product-1.png" alt="" />
+                <img src="../.././images/product-1.png" alt="" />
                 <div class="line-slider"></div>
               </div>
               <h3 class="mt-24">Lira Earrings</h3>
@@ -661,7 +662,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src=".././images/product-4.png"
+                      src="../.././images/product-4.png"
                       alt=""
                     />
                     <h3 class="product-name">Hair Pin Set of 3</h3>
@@ -673,7 +674,7 @@
                   <a href="">
                     <img
                       class="product-image"
-                      src=".././images/product-5.png"
+                      src="../.././images/product-5.png"
                       alt=""
                     />
                     <h3 class="product-name">Plaine Necklace</h3>
@@ -707,6 +708,8 @@
         id="iframe-footer"
         src="../../../features/footer/index.html"
       ></iframe>
+
+      <script src="../../../features/script.js"></script>
     </div>
   </body>
 </html>

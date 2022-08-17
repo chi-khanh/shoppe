@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shippng Cart</title>
+
+    <script src="../../features/script.js"></script>
+  </head>
+
+  <body onload="onLoad()">
+    <div class="page-wrapper">
+      <!-- header -->
+      <iframe
+        class="d-md-none"
+        id="iframe-header "
+        src="../../features/header/index.html"
+      ></iframe>
+
+      <!-- cart main -->
+      <div class="page-main">
+        <!-- shippping-cart -->
+
+        <div class="shippping-cart d-flex">
+          <!-- back-arrow -->
+          <svg
+            class="back-arrow d-none d-md-block"
+            width="10"
+            height="16"
+            viewBox="0 0 10 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.93443 14.463C9.01015 14.5381 9.05273 14.6403 9.05273 14.747C9.05273 14.8536 9.01015 14.9558 8.93443 15.0309L8.08656 15.8788C8.01399 15.9561 7.91266 16 7.8066 16C7.70055 16 7.59922 15.9561 7.52665 15.8788L0.175764 8.52792C0.0632264 8.41552 -6.89418e-05 8.26303 -0.000209118 8.10398L-0.0002091 7.89602C-6.88958e-05 7.73696 0.0632265 7.58448 0.175764 7.47208L7.52665 0.121197C7.59922 0.043866 7.70055 -1.18212e-07 7.80661 -1.0894e-07C7.91266 -9.96687e-08 8.01399 0.0438661 8.08656 0.121197L8.93443 0.969068C9.01015 1.04416 9.05274 1.14639 9.05274 1.25303C9.05274 1.35966 9.01015 1.46189 8.93443 1.53698L2.47141 8L8.93443 14.463Z"
+              fill="black"
+            />
+          </svg>
+
+          <!-- cart-header -->
+          <div class="cart-header">
+            <p class="text-md-center">Shopping bag</p>
+            <p class="text-dark-gray text-12 mt-16">6 items</p>
+          </div>
+
+          <!-- product-list -->
+          <div class="product-list text-md-12 flex-1">
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-1.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Lira Earrings</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 20,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-2.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Ollie Earrings</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 30,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-3.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Kaede Hair Pin</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 30,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-4.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Yuki Hair Pin</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 29,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-5.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Plaine Necklace</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 30,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+
+            <div class="product-item d-flex">
+              <a rule="link" href="pages/shop/product-description/index.html">
+                <img src=".././images/product-6.png" alt="" />
+              </a>
+              <div class="ml-8 d-flex flex-1 flex-column">
+                <div class="text-14">
+                  <p>Hair Pin Set of 3</p>
+                  <p class="text-dark-gray">Black / Medium</p>
+                  <p class="text-accent">$ 20,00</p>
+                </div>
+                <p class="text-12 text-dark-gray">
+                  <span>QTY:</span>
+                  <span class="ml-8">-</span>
+                  <span class="ml-8">1</span>
+                  <span class="ml-8">+</span>
+                </p>
+              </div>
+              <svg
+                class="ml-40"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09172L6.90828 7M1 6.90828L6.90828 1"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- view-cart-button -->
+          <div class="view-cart-button text-md-12">
+            <div class="product-price-total mt-20 mt-md-24 d-flex">
+              <p>Subtotal (5 items)</p>
+              <p>$ 159,00</p>
+            </div>
+
+            <a href="">
+              <button class="mt-20 mt-md-15 text-md-12">VIEW CART</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <iframe
+        class="d-md-none"
+        id="iframe-footer"
+        src="../../features/footer/index.html"
+      ></iframe>
+    </div>
+  </body>
+</html>
