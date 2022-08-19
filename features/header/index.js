@@ -47,7 +47,7 @@ const onNavigateToParent = (event) => {
 const onChangeMode = () => {
   const mode = localStorage.getItem("mode");
 
-  updateMode(mode === "light" ? "dark" : "light")
+  updateMode(mode === "light" ? "dark" : "light");
 };
 
 const updateMode = (mode) => {
@@ -64,7 +64,6 @@ const updateMode = (mode) => {
     // update dark-icon class
     darkIcon.classList.remove("d-block");
     darkIcon.classList.add("d-none");
-
   } else {
     localStorage.setItem("mode", "dark");
 
@@ -78,4 +77,9 @@ const updateMode = (mode) => {
   }
 
   postToParent({ header: { mode } });
-} 
+};
+
+let isOpen = false;
+const handleOpenCart = () => {
+  postToParent({ header: { cart: { isOpen: !isOpen } } });
+};

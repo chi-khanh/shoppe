@@ -94,6 +94,7 @@
 }
 
 .product-item img {
+  display: block;
   width: 136px;
   height: 136px;
 }
