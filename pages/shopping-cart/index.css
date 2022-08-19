@@ -1,0 +1,147 @@
+/* shopping-cart-wrapper */
+
+.shopping-cart-wrapper {
+  justify-content: space-between;
+}
+
+/* shopping-cart */
+
+.shopping-cart {
+  flex: 0 0 45%;
+}
+
+/* cart-item */
+.cart-item {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-item {
+    border: none;
+    padding: 0;
+  }
+}
+
+.cart-item .cart-product-image {
+  flex: 0 0 23%;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-item .cart-product-image {
+    flex: 1 0 0;
+  }
+}
+
+.cart-item img {
+  display: block;
+  width: 100%;
+}
+
+.cart-item svg,
+.cart-item-quantity {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-item svg {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* cart-item-quantity */
+.cart-item-quantity {
+  display: inline-block;
+  background: var(--light-light-gray);
+  border-radius: 4px;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+/* update-cart-button */
+.update-button {
+  background: var(--light-white);
+  border: 1px solid var(--light-black);
+  border-radius: 4px;
+  padding: 16px 30px;
+  color: var(--light-black);
+}
+
+@media screen and (max-width: 992px) {
+  .update-button {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 6px;
+  }
+}
+
+/* apply-button */
+.apply-coupon-button .form-button {
+  padding: 16px 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .apply-coupon-button .form-button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 8px;
+  }
+}
+
+/* <!-- ------------------- -->
+<!-- cart-total --> */
+
+.cart-total-wrapper {
+  flex: 0 0 50%;
+}
+
+.cart-total {
+  background: var(--light-light-gray);
+  padding: 40px 60px;
+}
+@media screen and (max-width: 992px) {
+  .cart-total {
+    padding: 16px;
+  }
+}
+.cart-total-left {
+  flex: 0 0 45%;
+}
+
+/* update-total-button */
+
+.update-total-button button {
+  width: 100%;
+}
+
+/* cart-price-total */
+
+.cart-price-total {
+  justify-content: space-between;
+  font-weight: 700;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-price-total {
+    font-weight: 400;
+    padding-top: 20px;
+  }
+}
+
+/* cart-checkout-button */
+
+.cart-checkout-button button {
+  width: 100%;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-checkout-button button {
+    padding: 8px;
+  }
+}

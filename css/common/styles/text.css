@@ -27,12 +27,33 @@
 .text-errors {
   color: var(--light-errors);
 }
-
+@media screen and (max-width: 992px) {
+  .text-lg-dark-gray {
+    color: var(--light-dark-gray);
+  }
+}
 /* ------------------------------------------------------------ */
 /* text align */
 .text-right {
   text-align: right;
 }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .text-lg-right {
+    text-align: right;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .text-md-center {
     text-align: center;
@@ -53,6 +74,27 @@
   font-size: 20px;
   line-height: 30px;
 }
+.text-26 {
+  font-size: 26px;
+  line-height: 39px;
+}
+.text-32 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  .text-lg-12 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .text-lg-16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .text-md-12 {
     font-size: 12px;

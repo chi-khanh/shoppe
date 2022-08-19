@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping-Cart</title>
+  </head>
+
+  <body onload="onLoad()">
+    <div class="page-wrapper">
+      <!-- header -->
+      <iframe
+        id="iframe-header"
+        src="../../features/header/index.html?activeNav=5"
+      >
+      </iframe>
+      <iframe id="iframe-cart" src="../../pages/cart/index.html"></iframe>
+
+      <div class="page-main">
+        <div class="container">
+          <!-- shopping cart label -->
+          <div class="text-center text-lg-left">
+            <p class="text-32 text-lg-16 mt-lg-16">Shopping Cart</p>
+          </div>
+          <!-- shopping-cart-wrapper -->
+          <div class="shopping-cart-wrapper d-flex d-lg-block mt-64 mt-lg-20">
+            <!-- shopping-cart -->
+            <div class="shopping-cart">
+              <div class="cart-item d-flex flex-lg-1">
+                <div class="cart-product-image">
+                  <a
+                    rule="link"
+                    href="pages/shop/product-description/index.html"
+                  >
+                    <img src=".././images/product-1.png" />
+                  </a>
+                </div>
+
+                <div
+                  class="d-flex flex-1 ml-24 ml-lg-8 flex-lg-column justify-lg-between"
+                >
+                  <div class="text-lg-12">
+                    <p class="text-20 text-lg-12">Lira Earrings</p>
+                    <p class="text-dark-gray mt-15 mt-lg-0">Black / Medium</p>
+                    <p class="text-accent">$ 20,00</p>
+                  </div>
+
+                  <div class="ml-50 ml-lg-0 text-lg-12">
+                    <div class="cart-item-quantity text-dark-gray">
+                      <span>-</span>
+                      <span class="ml-24 ml-lg-8">3</span>
+                      <span class="ml-24 ml-lg-8">+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <svg
+                  class="ml-16"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.18344L12.8166 13M1 12.8166L12.8166 1"
+                    stroke="black"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+
+              <div class="cart-item d-flex mt-40 mt-lg-24">
+                <div class="cart-product-image">
+                  <a
+                    rule="link"
+                    href="pages/shop/product-description/index.html"
+                  >
+                    <img src=".././images/product-2.png" />
+                  </a>
+                </div>
+
+                <div
+                  class="d-flex flex-1 ml-24 ml-lg-8 flex-lg-column justify-lg-between"
+                >
+                  <div class="text-lg-12">
+                    <p class="text-20 text-lg-12">Ollie Earrings</p>
+                    <p class="text-dark-gray mt-15 mt-lg-0">Black / Medium</p>
+                    <p class="text-accent">$ 20,00</p>
+                  </div>
+
+                  <div class="ml-50 ml-lg-0 text-lg-12">
+                    <div class="cart-item-quantity text-dark-gray">
+                      <span>-</span>
+                      <span class="ml-24 ml-lg-8">2</span>
+                      <span class="ml-24 ml-lg-8">+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <svg
+                  class="ml-16"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.18344L12.8166 13M1 12.8166L12.8166 1"
+                    stroke="black"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+
+              <div class="cart-item d-flex mt-40 mt-lg-24">
+                <div class="cart-product-image">
+                  <a
+                    rule="link"
+                    href="pages/shop/product-description/index.html"
+                  >
+                    <img src=".././images/product-3.png" />
+                  </a>
+                </div>
+
+                <div
+                  class="d-flex flex-1 ml-24 ml-lg-8 flex-lg-column justify-lg-between"
+                >
+                  <div class="text-lg-12">
+                    <p class="text-20 text-lg-12">Kaede Hair Pin</p>
+                    <p class="text-dark-gray mt-15 mt-lg-0">Black / Medium</p>
+                    <p class="text-accent">$ 20,00</p>
+                  </div>
+
+                  <div class="ml-50 ml-lg-0 text-lg-12">
+                    <div class="cart-item-quantity text-dark-gray">
+                      <span>-</span>
+                      <span class="ml-24 ml-lg-8">1</span>
+                      <span class="ml-24 ml-lg-8">+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <svg
+                  class="ml-16"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1.18344L12.8166 13M1 12.8166L12.8166 1"
+                    stroke="black"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+
+              <!-- update-cart-button -->
+              <div class="mt-40 mt-lg-24 text-right">
+                <button class="update-button">UPDATE CART</button>
+              </div>
+              <div class="apply-coupon-button d-flex d-lg-block mt-64 mt-lg-50">
+                <input
+                  class="input-outlined text-12"
+                  type="text"
+                  placeholder="Coupon Code"
+                />
+                <button class="form-button ml-75 ml-lg-0 text-lg-12">
+                  APPLY COUPON
+                </button>
+              </div>
+            </div>
+
+            <!-- ------------------- -->
+            <!-- cart-total -->
+            <div class="cart-total-wrapper mt-lg-40">
+              <div class="cart-total">
+                <p class="text-26 text-lg-16">Cart totals</p>
+
+                <div class="d-flex mt-45 mt-lg-24 text-lg-12">
+                  <!-- cart-total-left -->
+                  <div class="cart-total-left">
+                    <p>SUBTOTAL</p>
+                    <p class="mt-24">SHIPPING</p>
+                  </div>
+
+                  <!-- cart-total-right -->
+                  <div class="cart-total-right">
+                    <p class="text-dark-gray">$ 65,00</p>
+                    <p class="mt-24 text-dark-gray">
+                      Shipping costs will be calculated once you have provided
+                      address.
+                    </p>
+
+                    <div class="mt-40 mt-lg-24">
+                      <p>CALCULATE SHIPPING</p>
+                      <select class="input-outlined text-12 mt-24">
+                        <option>SELECT A COUNTRY</option>
+                      </select>
+                      <select class="input-outlined text-12 mt-24 mt-lg-15">
+                        <option>CITY</option>
+                      </select>
+                      <select class="input-outlined text-12 mt-24 mt-lg-15">
+                        <option>POST CODE / ZIP</option>
+                      </select>
+                    </div>
+
+                    <!-- update-total-button -->
+                    <div class="update-total-button mt-24">
+                      <button class="update-button text-lg-12">
+                        UPDATE TOTALS
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- art-price-total -->
+                <div class="cart-price-total mt-40 mt-lg-30 text-lg-12 d-flex">
+                  <p>TOTAl</p>
+                  <p class="text-lg-dark-gray">$ 87,00</p>
+                </div>
+
+                <!-- cart-checkout-button -->
+                <div class="cart-checkout-button mt-45 mt-lg-24">
+                  <button class="form-button text-lg-12">
+                    PROCEED TO CHECKOUT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <iframe
+        id="iframe-footer"
+        src="../../features/footer/index.html"
+      ></iframe>
+
+      <script src="../../features/script.js"></script>
+    </div>
+  </body>
+</html>

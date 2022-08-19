@@ -38,6 +38,18 @@ window.addEventListener(
     if (header?.navigate) {
       window.location.href = header.navigate.url;
     }
+
+    // toggle cart
+    if (header?.cart) {
+      const cartElement = document.getElementById("iframe-cart");
+      if (header?.cart.isOpen) {
+        cartElement.classList.add("iframe-cart-show");
+        cartElement.classList.remove("iframe-cart-hide");
+      } else {
+        cartElement.classList.add("iframe-cart-hide");
+        cartElement.classList.remove("iframe-cart-show");
+      }
+    }
   },
   false
 );

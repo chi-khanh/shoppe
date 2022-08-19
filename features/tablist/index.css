@@ -43,7 +43,7 @@
   fill: var(--light-light-gray);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .tab-list-arrow-left,
   .tab-list-arrow-right {
     display: inline-block;

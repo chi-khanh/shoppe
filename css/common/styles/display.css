@@ -12,9 +12,28 @@
 .flex-1 {
   flex: 1;
 }
+@media screen and (max-width: 992px) {
+  .flex-lg-1 {
+    flex: 1;
+  }
+}
 .flex-column {
   flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .flex-lg-column {
+    flex-direction: column;
+  }
+}
+
+.justify-between {
   justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .justify-lg-between {
+    justify-content: space-between;
+  }
 }
 /* ------------------------------------------------------------ */
 /* dislay-block */
