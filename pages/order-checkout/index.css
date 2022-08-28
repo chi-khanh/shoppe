@@ -1,0 +1,133 @@
+/* apply-coupon */
+
+.apply-coupon {
+  width: 45%;
+  border: 1px solid var(--light-gray);
+  padding: 24px 24px 40px 24px;
+}
+
+.apply-coupon .form-button {
+  padding: 16px 24px;
+}
+
+/* checkout-detail */
+.checkout-detail {
+  justify-content: space-between;
+}
+
+/* input-outlined-wrapper */
+.input-outlined-wrapper .input-outlined {
+  margin-top: 36px;
+}
+@media screen and (max-width: 992px) {
+  .input-outlined-wrapper .input-outlined {
+    margin-top: 24px;
+  }
+}
+
+/* input-checkbox */
+.input-checkbox input,
+.input-checkbox label {
+  cursor: pointer;
+}
+
+/* ------------------- */
+/* order-detail */
+.order-detail {
+  background: var(--light-light-gray);
+  padding: 40px 60px;
+}
+@media screen and (max-width: 992px) {
+  .order-detail {
+    background: var(--light-light-gray);
+    padding: 20px 16px;
+  }
+}
+
+.top-line {
+  border-top: 1px solid var(--light-gray);
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-line {
+    border-bottom: 1px solid var(--light-gray);
+  }
+}
+.order-detail h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (max-width: 992px) {
+  .order-detail h3 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+/* radio-checkbox */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--light-black);
+  border-radius: 100%;
+  background: transparent;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--light-black);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* order-detail-wrapper .form-button */
+
+.order-detail-wrapper .form-button {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .order-detail-wrapper .form-button {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px;
+  }
+}

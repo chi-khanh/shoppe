@@ -3,6 +3,9 @@
 .d-flex {
   display: flex;
 }
+.align-center {
+  align-items: center;
+}
 
 @media screen and (max-width: 768px) {
   .d-md-flex {
@@ -66,23 +69,14 @@
   .d-lg-none {
     display: none;
   }
-  .d-lg-block {
-    display: block;
-  }
 }
 @media screen and (max-width: 768px) {
   .d-md-none {
     display: none;
   }
-  .d-md-block {
-    display: block;
-  }
 }
 @media screen and (max-width: 576px) {
   .d-sm-none {
     display: none;
-  }
-  .d-sm-block {
-    display: block;
   }
 }
