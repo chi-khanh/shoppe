@@ -65,60 +65,6 @@
   }
 }
 
-/* radio-checkbox */
-
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 26px;
-  cursor: pointer;
-}
-
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 14px;
-  height: 14px;
-  border: 2px solid var(--light-black);
-  border-radius: 100%;
-  background: transparent;
-}
-
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: var(--light-black);
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-[type="radio"]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
 /* order-detail-wrapper .form-button */
 
 .order-detail-wrapper .form-button {
