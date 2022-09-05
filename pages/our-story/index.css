@@ -1,0 +1,19 @@
+/* our-story-main */
+
+.our-story-main {
+  padding: 0 250px;
+}
+@media screen and (max-width: 992px) {
+  .our-story-main {
+    padding: 0;
+  }
+}
+.our-story-main img {
+  margin-top: 25px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .our-story-main img {
+    margin-top: 15px;
+  }
+}
