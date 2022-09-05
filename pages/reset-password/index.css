@@ -1,0 +1,19 @@
+/* reset-password */
+
+.reset-password {
+  padding: 0 330px;
+}
+@media screen and (max-width: 992px) {
+  .reset-password {
+    padding: 0;
+  }
+}
+
+.reset-password button {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .reset-password button {
+    padding: 8px;
+  }
+}
