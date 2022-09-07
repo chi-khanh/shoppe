@@ -1,0 +1,49 @@
+/* contact-main */
+
+.contact-main {
+  margin-top: 30px;
+  padding: 0 170px;
+}
+@media screen and (max-width: 992px) {
+  .contact-main {
+    margin-top: 40px;
+    padding: 0;
+  }
+}
+
+.contact-main p {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .contact-main p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contact-main .form-button {
+  margin-top: 95px;
+  padding: 16px 230px;
+}
+@media screen and (max-width: 992px) {
+  .contact-main .form-button {
+    margin-top: 30px;
+    padding: 8px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .contact-main .input-outlined {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-main .input-outlined {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
