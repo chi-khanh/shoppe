@@ -82,17 +82,6 @@
   width: 100%;
 }
 
-.top-line {
-  border-top: 1px solid var(--light-gray);
-  padding-top: 40px;
-}
-
-@media screen and (max-width: 992px) {
-  .top-line {
-    padding-top: 24px;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .blog-reply .form-button {
     padding: 10px 30px;

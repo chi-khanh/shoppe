@@ -1,0 +1,9 @@
+.header-menu .menu-item {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.menu-item a {
+  color: var(--light-black);
+}
