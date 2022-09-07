@@ -1,0 +1,60 @@
+/* account-signin-content */
+
+.account-signin-content {
+  padding: 0 380px;
+}
+@media screen and (max-width: 992px) {
+  .account-signin-content {
+    margin-top: -15px;
+    padding: 0;
+  }
+}
+
+.signin-register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-light-gray);
+  margin-top: 65px;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .signin-register {
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.signin {
+  background: var(--light-white);
+  padding: 12px 88px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 992px) {
+  .signin {
+    padding: 12px 50px;
+  }
+}
+
+.register {
+  padding: 12px 80px 12px 0;
+}
+@media screen and (max-width: 992px) {
+  .register {
+    padding: 12px 60px 12px 0;
+  }
+}
+
+.account-signin-content button {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .account-signin-content button {
+    padding: 8px;
+  }
+}
