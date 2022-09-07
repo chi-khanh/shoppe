@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .text-lg-center {
+    text-align: center;
+  }
   .text-lg-right {
     text-align: right;
   }
